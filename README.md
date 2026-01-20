@@ -6,7 +6,10 @@ Contém os principais métodos usados no dia-a-dia para análise de dados, segme
 import numpy as np
 import pandas as pd
 ```
-
+#### Drop
+```python
+df = df.drop(columns=['Coluna'])
+```
 
 #### GroupBy
 ```python
