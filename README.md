@@ -14,7 +14,12 @@ df_media = (
     df.groupby('coluna')['valor']
     .mean()
     .rename('avg')
+    .reset_index()
 )
+
+#Cria um count sem precisar de criar outro df e fazer merge
+df['Total'] = df.groupby('Coluna').transform('size')
+
 ```
 
 #### Where
