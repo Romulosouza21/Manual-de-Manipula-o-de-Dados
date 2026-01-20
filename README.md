@@ -7,6 +7,16 @@ import numpy as np
 import pandas as pd
 ```
 
+
+#### GroupBy
+```python
+df_media = (
+    df.groupby('coluna')['valor']
+    .mean()
+    .rename('avg')
+)
+```
+
 #### Where
 ```python
 new['coluna'] = new['coluna'].where(~(new['coluna2'] == 1),True)
