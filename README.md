@@ -61,4 +61,9 @@ new['coluna'] = new['coluna'].str.extract(r'\b([0-9_]{8}\S)\b')
 #### Datetime
 ```python
 diferenca = abs((hora1 - hora2).total_seconds())
+
+data_inicio = '2025-01-01' / data_fim = datetime.now()
+lista_datas = pd.date_range(start=data_inicio, end=data_fim, freq='MS').strftime('%Y-%m-%d').tolist()
+['2025-01-01', '2025-02-01',...,'2026-03-01']
+
 ```
